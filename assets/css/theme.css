@@ -1,0 +1,77 @@
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.landing-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff 50%, #fff3cd 100%);
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #333333 !important;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #333333;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+.btn-outline-primary {
+    border-color: #ffc107;
+    color: #ffc107;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ffc107;
+    color: #333333;
+}
+
+.auth-card {
+    max-width: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.text-primary {
+    color: #ffc107 !important;
+}
+
+.text-primary:hover {
+    color: #e0a800 !important;
+}
+
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}

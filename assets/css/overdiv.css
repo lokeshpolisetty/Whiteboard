@@ -1,0 +1,47 @@
+/* 
+This file contains additional styles for overlay elements or popups within the application.
+*/
+
+.overdiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popup {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.overBtns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.overBtns button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.overBtns button:hover {
+    background-color: #0056b3;
+}

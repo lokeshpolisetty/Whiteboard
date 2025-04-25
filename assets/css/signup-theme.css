@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(135deg, #ffffff 50%, #fff3cd 100%);
+    color: #333333;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.signup-card {
+    max-width: 450px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.btn-yellow {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #333333;
+    transition: stati transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+}
+
+.text-yellow {
+    color: #ffc107 !important;
+}
+
+.text-yellow:hover {
+    color: #e0a800 !important;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border: 2px solid #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3);
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+h2.card-title {
+    color: #333333;
+    font-weight: bold;
+}

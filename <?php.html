@@ -1,0 +1,19 @@
+<?php 
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php"); // redirect to login if not authenticated
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whiteboard Dashboard</title>
+    <!-- ...existing code... -->
+</head>
+<body>
+    <!-- ...existing code... -->
+    <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></h1>
+    <!-- ...existing dashboard content... -->
+</body>
+</html>
