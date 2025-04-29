@@ -16,40 +16,34 @@ $conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online whiteboard</title>
+
     <!-- Font awesome CDN -->
     <script src="https://kit.fontawesome.com/8585c17760.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/overdiv.css">
-    <link rel="stylesheet" href="./assets/css/profile-theme.css">
+
 </head>
 <body>
+
     <div class="container">
-        <!-- Profile Container -->
-        <div class="profile-container">
-            <button class="profile-icon" title="User Profile">
-                <i class="fa fa-user-circle" style="font-size:2rem;"></i>
-            </button>
-            <div class="profile-details">
-                <p>Username: <?php echo htmlspecialchars($username); ?></p>
-                <p>Email: <?php echo htmlspecialchars($email); ?></p>
-                <p><a href="signout.php" class="text-yellow">Sign Out</a></p>
-            </div>
-        </div>
         <!-- Tools Section -->
         <div class="tools-bar">
             <button class="open-tools" title="Tools">
                 <img src="./assets/images/menu.png" class="open">
                 <img src="./assets/images/exit.png" class="close">
             </button>
+
             <div class="tools">
                 <button class="tool-btn pen" title="Pen">
                     <span><img src="./assets/images/pen.png"></span>
                     <i class="fa fa-angle-up"></i>
                 </button>
+
                 <div id="pen-dropdown" class="dropdown">
                     <div class="dropdown-items">
                         <input type="range" id="pen-width" min="1" max="100" step="1" value="3">
@@ -63,6 +57,7 @@ $conn->close();
                         <button class="color-swatch" style="background: #FFFFFF;" data-color="#FFFFFF"></button>
                         <button class="color-swatch" style="background: #FFF000;" data-color="#FFF000"></button>
                         <button class="color-swatch" style="background: #00FFFF;" data-color="#00FFFF"></button>
+
                         <div class="color-picker-container">
                             <input type="color" id="custom-color-picker" title="Choose custom color">
                             <label for="custom-color-picker" class="color-picker-label">
@@ -70,6 +65,7 @@ $conn->close();
                             </label>
                         </div>
                     </div>
+
                     <div class="dropdown-items-btn">
                         <button class="other-tools" id="pen"><i class="fa-solid fa-pencil"></i> Pen</button>
                         <button class="other-tools" id="highlighter"><i class="fa-solid fa-highlighter"></i> Highlighter</button>
@@ -78,12 +74,15 @@ $conn->close();
                         <button class="other-tools" id="trash"><i class="fa-solid fa-trash"></i> Erase All</button>
                     </div>
                 </div>
+
                 <button class="tool-btn undo" id="undo" title="Undo">
                     <span><img src="./assets/images/undo.png"></span>
                 </button>
+
                 <button class="tool-btn redo" id="redo" title="Redo">
                     <span style="transform: scaleX(-1);"><img src="./assets/images/undo.png"></span>
                 </button>
+
                 <div style="text-align: center; margin-top: 10px;">
                     <button id="prevPage" title="Previous Page" class="tool-btn">
                         <i class="fas fa-minus"></i>
@@ -93,25 +92,30 @@ $conn->close();
                         <i class="fas fa-plus"></i>
                     </button>                
                 </div> 
+                
                 <div class="tools">
                     <button id="downloadPDF" class="tool-btn" title="Download as PDF">
                       <i class="fas fa-file-pdf"></i>
                     </button>
-                </div>
+                  </div>
+                  
             </div>
         </div>
+
         <!-- Main content -->
         <div class="main-area">
             <!-- Content Section -->
             <div class="content-section" id="content-area">
                 <canvas id="whiteboard"></canvas>
             </div>
+
             <div class="chat-section">
                 <div class="chat-box-btn">
                     <button class="chat-btn" title="Mute Chat">
                         <img src="./assets/images/mute-chat.png">
                     </button>
                 </div>
+
                 <div id="student-messages"></div>
                 <div class="send-msg-box">
                     <textarea placeholder="Text your message..." id="tutor-message"></textarea>
@@ -121,7 +125,9 @@ $conn->close();
                 </div>
             </div>
         </div>
+
     </div>
+
     <div class="overdiv">
         <div class="popup alert">
             <img src="./assets/images/alert.gif" alt="Alert">
@@ -132,9 +138,10 @@ $conn->close();
             </div>
         </div>
     </div>
+
     <script src="./assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <!-- Updated to use the toggle functionality for the profile logo -->
-    <script src="./assets/js/profile-theme.js"></script>
+
+
 </body>
 </html>
